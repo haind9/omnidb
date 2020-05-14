@@ -2,7 +2,7 @@ FROM centos:7.8.2003
 LABEL maintainer="xplat.fpt.com.vn" version="10"
 
 
-RUN curl "https://github.com/pwnlabs/oracle-instantclient/blob/master/oracle-instantclient12.2-basic-12.2.0.1.0-1.x86_64.rpm" -o /tmp/oracle-instantclient12.2-basic-12.2.0.1.0-1.x86_64.rpm \
+RUN curl "https://raw.githubusercontent.com/pwnlabs/oracle-instantclient/master/oracle-instantclient12.2-basic-12.2.0.1.0-1.x86_64.rpm" -o /tmp/oracle-instantclient12.2-basic-12.2.0.1.0-1.x86_64.rpm \
     && curl "https://omnidb.org/dist/2.17.0/omnidb-server_2.17.0-centos7-amd64.rpm" -o /tmp/omnidb-server_2.17.0-centos7-amd64.rpm
 
 #also you can download *.rpm locally first.
