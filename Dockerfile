@@ -19,6 +19,6 @@ RUN yum install -y pwgen wget logrotate bind-utils net-tools which lsof telnet s
 
 ENV LD_LIBRARY_PATH /usr/lib/oracle/12.2/client64/lib
 
-EXPOSE 8888 8080
+EXPOSE 8888 8080 80
 
 ENTRYPOINT ["omnidb-server", "-p", "8080", "-w", "8888", "-e", "80", "-d", "/etc/omnidb", "-H", "0.0.0.0"]
